@@ -213,6 +213,8 @@
 			children = (
 				2B12A0DD1792FF46007F2A0A /* TestColorViewController.h */,
 				2B12A0DE1792FF46007F2A0A /* TestColorViewController.m */,
+				1FA35E6E13F57B2800A6B347 /* RSColorPickerAppDelegate.h */,
+				1FA35E6F13F57B2800A6B347 /* RSColorPickerAppDelegate.m */,
 				2B85420A16EFC8970047FFBE /* ColorPickerClasses */,
 				1FA35E6613F57B2700A6B347 /* Supporting Files */,
 			);
@@ -233,8 +235,6 @@
 		2B85420A16EFC8970047FFBE /* ColorPickerClasses */ = {
 			isa = PBXGroup;
 			children = (
-				1FA35E6E13F57B2800A6B347 /* RSColorPickerAppDelegate.h */,
-				1FA35E6F13F57B2800A6B347 /* RSColorPickerAppDelegate.m */,
 				FA5AA0E6185F6477000355FE /* RSBrightnessSlider.h */,
 				FA5AA0E7185F6477000355FE /* RSBrightnessSlider.m */,
 				FA5AA0E8185F6477000355FE /* RSOpacitySlider.h */,
