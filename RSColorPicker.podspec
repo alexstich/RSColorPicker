@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.author       = { "Ryan" => "rsul.dev@me.com" }
   s.source       = { :git => "https://github.com/RSully/RSColorPicker.git", :tag => "v0.9.2" }
   s.platform     = :ios, '6.0'
-  s.source_files = 'RSColorPicker/ColorPickerClasses/**/*.{h,m}'
+  s.source_files = 'RSColorPicker/ColorPickerClasses/**/*.{h,m}', 'RSColorPicker/ColorPickerClasses/**/**/*.{h,m}'
   s.frameworks   = 'QuartzCore', 'CoreGraphics', 'UIKit', 'Accelerate'
   s.requires_arc = true
 
