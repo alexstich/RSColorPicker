@@ -148,6 +148,8 @@ UIImage * RSArrowLoopThumbImage(CGSize size, CGSize loopSize){
     
     self.layer.cornerRadius = 5;
     self.clipsToBounds = YES;
+    
+    _color = UIColor.blackColor;
 }
 
 - (void)myValueChanged:(id)notif {

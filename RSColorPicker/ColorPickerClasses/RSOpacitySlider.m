@@ -40,6 +40,8 @@
     
     self.layer.cornerRadius = 5;
     self.clipsToBounds = YES;
+    
+    _color = UIColor.blackColor;
 }
 
 -  (void)didMoveToWindow {
