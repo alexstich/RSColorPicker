@@ -37,6 +37,9 @@
     self.userInteractionEnabled = YES;
 
     [self addTarget:self action:@selector(myValueChanged:) forControlEvents:UIControlEventValueChanged];
+    
+    self.layer.cornerRadius = 5;
+    self.clipsToBounds = YES;
 }
 
 -  (void)didMoveToWindow {
