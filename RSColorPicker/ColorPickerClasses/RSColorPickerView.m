@@ -198,7 +198,7 @@
     self.brightnessLayer.frame  = self.bounds;
     self.opacityLayer.frame     = self.bounds;
 
-    self.opacityLayer.backgroundColor = [[UIColor colorWithPatternImage:RSOpacityBackgroundImage(20, self.scale, [UIColor colorWithWhite:0.5 alpha:1.0])] CGColor];
+    self.opacityLayer.backgroundColor = [[UIColor colorWithPatternImage:RSOpacityBackgroundImage(20, self.scale, [UIColor colorWithWhite: 0.92 alpha: 1.0])] CGColor];
 
     [self genBitmap];
     [self generateBezierPaths];

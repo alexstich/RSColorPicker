@@ -42,8 +42,8 @@
 -  (void)didMoveToWindow {
     if (!self.window) return;
 
-    UIImage *backgroundImage = RSOpacityBackgroundImage(16.f, self.window.screen.scale, [UIColor colorWithWhite:0.5 alpha:1.0]);
-    self.backgroundColor = [UIColor colorWithPatternImage:backgroundImage];
+    UIImage *backgroundImage = RSOpacityBackgroundImage(16.f, self.window.screen.scale, [UIColor colorWithWhite: 0.92 alpha: 1.0]);
+    self.backgroundColor = [UIColor colorWithPatternImage: backgroundImage];
 }
 
 - (void)myValueChanged:(id)notif {
@@ -55,8 +55,8 @@
 
     CGColorSpaceRef space = CGColorSpaceCreateDeviceGray();
     NSArray *colors = [[NSArray alloc] initWithObjects:
-                       (id)[UIColor colorWithWhite:0 alpha:0].CGColor,
-                       (id)[UIColor colorWithWhite:1 alpha:1].CGColor,nil];
+                       (id)[UIColor colorWithWhite: 0 alpha: 0].CGColor,
+                       (id)[UIColor colorWithWhite: 1 alpha: 1].CGColor,nil];
 
     CGGradientRef myGradient = CGGradientCreateWithColors(space, (__bridge CFArrayRef)colors, NULL);
 
