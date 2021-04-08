@@ -154,9 +154,9 @@ UIImage * RSArrowLoopThumbImage(CGSize size, CGSize loopSize){
 - (void)drawRect:(CGRect)rect {
     CGContextRef ctx = UIGraphicsGetCurrentContext();
 
-    CGColorSpaceRef space = CGColorSpaceCreateDeviceGray();
+    CGColorSpaceRef space = CGColorSpaceCreateDeviceRGB();
     NSArray *colors = @[(id)[UIColor colorWithWhite:0 alpha:1].CGColor,
-                        (id)[UIColor colorWithWhite:1 alpha:1].CGColor];
+                        (id)[_color colorWithAlphaComponent: 1].CGColor];
 
     CGGradientRef myGradient = CGGradientCreateWithColors(space, (__bridge CFArrayRef)colors, NULL);
 
@@ -169,6 +169,11 @@ UIImage * RSArrowLoopThumbImage(CGSize size, CGSize loopSize){
     _colorPicker = cp;
     if (!_colorPicker) { return; }
     self.value = [_colorPicker brightness];
+}
+
+- (void)setColor:(UIColor *)cr {
+    _color = cr;
+    [self setNeedsDisplay];
 }
 
 @end

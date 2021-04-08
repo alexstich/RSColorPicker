@@ -12,5 +12,6 @@
 @interface RSOpacitySlider : UISlider
 
 @property (nonatomic) RSColorPickerView *colorPicker;
+@property (nonatomic) UIColor *color;
 
 @end

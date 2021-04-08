@@ -53,10 +53,10 @@
 - (void)drawRect:(CGRect)rect {
     CGContextRef ctx = UIGraphicsGetCurrentContext();
 
-    CGColorSpaceRef space = CGColorSpaceCreateDeviceGray();
+    CGColorSpaceRef space = CGColorSpaceCreateDeviceRGB();
     NSArray *colors = [[NSArray alloc] initWithObjects:
-                       (id)[UIColor colorWithWhite: 0 alpha: 0].CGColor,
-                       (id)[UIColor colorWithWhite: 1 alpha: 1].CGColor,nil];
+                       (id)[_color colorWithAlphaComponent: 0].CGColor,
+                       (id)[_color colorWithAlphaComponent: 1].CGColor, nil];
 
     CGGradientRef myGradient = CGGradientCreateWithColors(space, (__bridge CFArrayRef)colors, NULL);
 
@@ -69,6 +69,11 @@
     _colorPicker = cp;
     if (!_colorPicker) { return; }
     self.value = [_colorPicker brightness];
+}
+
+- (void)setColor:(UIColor *)cr {
+    _color = cr;
+    [self setNeedsDisplay];
 }
 
 @end
